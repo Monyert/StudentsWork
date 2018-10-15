@@ -75,7 +75,7 @@
 
             android:layout_marginTop="28dp"
             android:layout_marginBottom="59dp"
-            android:onClick="img_on_off"
+            android:onClick="img_on"
             app:layout_constraintBottom_toTopOf="@+id/toggleButton"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -88,7 +88,7 @@
             android:layout_height="100dp"
             android:layout_marginTop="28dp"
             android:layout_marginBottom="58dp"
-            android:onClick="img_on_off"
+            android:onClick="img_off"
             app:layout_constraintBottom_toTopOf="@+id/toggleButton"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

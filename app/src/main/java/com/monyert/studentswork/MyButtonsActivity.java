@@ -55,24 +55,32 @@ public class MyButtonsActivity extends MainMenu {
 
     ImageButton img1;
     ImageButton img2;
-    public void img_on_off(View v) {
+    public void img_off(View v) {
 
 
-        img1=(ImageButton)findViewById(R.id.imageButtonON);
-        img2=(ImageButton)findViewById(R.id.imageButtonOFF);
+        img1= findViewById(R.id.imageButtonON);
+        img2= findViewById(R.id.imageButtonOFF);
         switch(v.getId()) {
             case R.id.imageButtonOFF:
-                if (true) {
+                if(true) {
                     img2.setVisibility(View.INVISIBLE);
                     img1.setVisibility(View.VISIBLE);
+                }
+        }
 
-            }
+    }
+
+    public void img_on(View v) {
+
+
+        img1= findViewById(R.id.imageButtonON);
+        img2= findViewById(R.id.imageButtonOFF);
+        switch(v.getId()) {
             case R.id.imageButtonON:
                 if(true) {
-                img2.setVisibility(View.VISIBLE);
-                img1.setVisibility(View.INVISIBLE);
-
-            }
+                    img1.setVisibility(View.INVISIBLE);
+                    img2.setVisibility(View.VISIBLE);
+                }
         }
 
     }
@@ -110,9 +118,10 @@ public class MyButtonsActivity extends MainMenu {
         boolean on = ((Switch) view).isChecked();
 
         if (on) {
-            setVisible(true);
+
+            //setVisible(true);
         } else {
-            setVisible(false);
+            //setVisible(false);
         }
 
     }
