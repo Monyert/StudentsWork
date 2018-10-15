@@ -22,6 +22,10 @@
         <activity
             android:name=".MyButtonsActivity"
             android:label="@string/title_activity_my_buttons"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MyWebsActivity"
+            android:label="@string/title_activity_my_webs"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

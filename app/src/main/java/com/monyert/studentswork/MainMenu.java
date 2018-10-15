@@ -38,7 +38,8 @@ public class MainMenu extends AppCompatActivity {
             return true;
         }
         if (id == R.id.action_web) {
-            Toast.makeText(this, "Selected " + item , Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(this, MyWebsActivity.class);
+            startActivity(intent);
             return true;
         }
         if (id == R.id.action_lists) {

@@ -20,4 +20,6 @@
     <string name="click_alert_woman">Woman Selected</string>
     <string name="click_alert_man">Man Selected</string>
     <string name="acept">Accept</string>
+    <string name="title_activity_my_webs">MyWebsActivity</string>
+    <string name="sub_web1">subweb1</string>
 </resources>
