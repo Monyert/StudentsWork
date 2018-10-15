@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Students Work</string>
+    <string name="action_home">Home</string>
+    <string name="action_settings">Settings</string>
+    <string name="texto">This is the First Students Project</string>
+    <string name="action_buttons">My Buttons</string>
+    <string name="action_web">My Websites</string>
+    <string name="action_list">My Lists</string>
+
+    <string name="title_activity_my_buttons">MyButtonsActivity</string>
+    <string name="womanText">Woman</string>
+    <string name="manText">Man</string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
+    <string name="toast_toggle_off">Toggle is now OFF</string>
+    <string name="toast_toggle_on">Toggle is now ON</string>
+    <string name="women">Women</string>
+    <string name="man">Man</string>
+    <string name="radio_alert">Alert</string>
+    <string name="click_alert_woman">Woman Selected</string>
+    <string name="click_alert_man">Man Selected</string>
+    <string name="acept">Accept</string>
+</resources>

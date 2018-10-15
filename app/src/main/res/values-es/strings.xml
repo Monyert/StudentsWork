@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Trabajo Alumnos</string>
+    <string name="action_home">Inicio</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="texto">Este es el Primer Proyecto de los Alumnos</string>
+    <string name="action_buttons">Mis Botones</string>
+    <string name="action_web">Mis Paginas</string>
+    <string name="action_list">Mis Listas</string>
+
+    <string name="title_activity_my_buttons">MisBotones</string>
+    <string name="womanText">Mujer</string>
+    <string name="manText">Hombre</string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
+    <string name="toast_toggle_off">El toggle esta Apagado</string>
+    <string name="toast_toggle_on">El toogle esta Encendido</string>
+    <string name="women">Mujer</string>
+    <string name="man">Hombre</string>
+    <string name="radio_alert">Alerta</string>
+    <string name="click_alert_woman">Mujer Seleccionada</string>
+    <string name="click_alert_man">Hombre Seleccionado</string>
+    <string name="acept">Aceptar</string>
+</resources>

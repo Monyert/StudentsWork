@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Treball Alumnes</string>
+    <string name="action_home">Inici</string>
+    <string name="action_settings">Configuracio</string>
+    <string name="texto">Aquest es el Primer Treball dels Alumnes</string>
+    <string name="action_buttons">Els meus Botons</string>
+    <string name="action_web">Les meues Pagines</string>
+    <string name="action_list">Les meues Llistes</string>
+
+    <string name="title_activity_my_buttons">MeusBotons</string>
+    <string name="womanText">Dona</string>
+    <string name="manText">Home</string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
+    <string name="toast_toggle_off">El toggle esta en Apagat</string>
+    <string name="toast_toggle_on">El toggle esta Ences</string>
+    <string name="women">Dona</string>
+    <string name="man">Home</string>
+    <string name="radio_alert">Alerta</string>
+    <string name="click_alert_woman">Dona Seleccionada</string>
+    <string name="click_alert_man">Home Seleccionat</string>
+    <string name="acept">Acceptar</string>
+</resources>
