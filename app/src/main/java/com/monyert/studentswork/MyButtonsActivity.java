@@ -2,6 +2,7 @@ package com.monyert.studentswork;
 
 import android.media.Image;
 import android.os.Bundle;
+import android.support.constraint.ConstraintLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AlertDialog;
@@ -18,6 +19,9 @@ public class MyButtonsActivity extends MainMenu {
     private RadioButton gender;
     Boolean ON = true;
     Button button;
+    ConstraintLayout constraintLayout;
+    Toolbar toolbar;
+    Boolean checked = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,10 +29,12 @@ public class MyButtonsActivity extends MainMenu {
         setContentView(R.layout.activity_my_buttons);
         gender = (RadioButton) findViewById(R.id.radio_woman);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar = findViewById(R.id.toolbar);
+        constraintLayout = findViewById(R.id.constraintLayout2);
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -114,16 +120,19 @@ public class MyButtonsActivity extends MainMenu {
         }
     }
 
+
     public void switch_on_off(View view) {
-        boolean on = ((Switch) view).isChecked();
 
-        if (on) {
-
-            //setVisible(true);
-        } else {
-            //setVisible(false);
+        if(checked){
+            constraintLayout.setVisibility(View.VISIBLE);
+            checked = false;
+            Toast.makeText(this, "Seleccionat Visible ", Toast.LENGTH_SHORT).show();
         }
-
+        else{
+            constraintLayout.setVisibility(View.INVISIBLE);
+            checked = true;
+            Toast.makeText(this, "Seleccionat Invisible ", Toast.LENGTH_SHORT).show();
+        }
     }
 }
 

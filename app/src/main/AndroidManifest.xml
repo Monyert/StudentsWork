@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.monyert.studentswork">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -26,6 +28,10 @@
         <activity
             android:name=".MyWebsActivity"
             android:label="@string/title_activity_my_webs"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MyListActivity"
+            android:label="@string/title_activity_my_list"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

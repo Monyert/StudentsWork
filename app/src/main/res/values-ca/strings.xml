@@ -8,7 +8,7 @@
     <string name="action_web">Les meues Pagines</string>
     <string name="action_list">Les meues Llistes</string>
 
-    <string name="title_activity_my_buttons">MeusBotons</string>
+    <string name="title_activity_my_buttons">Els meus Botons</string>
     <string name="womanText">Dona</string>
     <string name="manText">Home</string>
     <string name="on">On</string>
@@ -21,5 +21,20 @@
     <string name="click_alert_woman">Dona Seleccionada</string>
     <string name="click_alert_man">Home Seleccionat</string>
     <string name="acept">Acceptar</string>
-    <string name="sub_web1">subweb1</string>
+    <string name="interrup">Interruptor</string>
+    <string name="switch_off">Interruptor OFF</string>
+    <string name="switch_on">Interruptor ON</string>
+
+    <string name="title_activity_my_webs">Les meues Pagines Web</string>
+    <string name="sub_web1">Lineage2</string>
+    <string name="url_lineage">https://eu.4game.com/lineage2/play/</string>
+    <string name="url_aion">https://es.aion.gameforge.com/website/</string>
+    <string name="sub_web2">Aion</string>
+    <string name="sub_web3">Tera</string>
+    <string name="url_tera">https://en.tera.gameforge.com/news/index</string>
+
+    <string name="title_activity_my_list">Les Meues Llistes</string>
+    <string name="campo_texto"></string>
+
+
 </resources>

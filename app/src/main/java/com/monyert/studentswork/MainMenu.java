@@ -8,8 +8,8 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 public class MainMenu extends AppCompatActivity {
-
-
+    static String submenu_url;
+    static String text_web;
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
@@ -24,10 +24,11 @@ public class MainMenu extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
+        /*
         if (id == R.id.action_settings) {
 
             return true;
-        }
+        }*/
         if (id == R.id.action_home) {
             Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);
@@ -37,16 +38,34 @@ public class MainMenu extends AppCompatActivity {
             startActivity(intent);
             return true;
         }
-        if (id == R.id.action_web) {
+        if (id == R.id.sub_web_item1) {
             Intent intent = new Intent(this, MyWebsActivity.class);
             startActivity(intent);
+            submenu_url = getString(R.string.url_lineage);
+
+            return true;
+        }
+        if (id == R.id.sub_web_item2) {
+            Intent intent = new Intent(this, MyWebsActivity.class);
+            startActivity(intent);
+            submenu_url = getString(R.string.url_aion);
+
+            return true;
+        }
+        if (id == R.id.sub_web_item3) {
+            Intent intent = new Intent(this, MyWebsActivity.class);
+            startActivity(intent);
+            submenu_url = getString(R.string.url_tera);
+
             return true;
         }
         if (id == R.id.action_lists) {
-            Toast.makeText(this, "Selected " + item , Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(this, MyListActivity.class);
+            startActivity(intent);
+            Toast.makeText(this, "Selected " + item, Toast.LENGTH_SHORT).show();
             return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
 }
+
