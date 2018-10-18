@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
-public class MyListActivity extends AppCompatActivity {
+public class MyListActivity extends MainMenu {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

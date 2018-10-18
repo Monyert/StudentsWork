@@ -34,7 +34,9 @@
     <string name="campo_texto"></string>
 
     <string name="title_activity_my_list">My List</string>
-
+    <string name="text_mis_listas">My Favourite Anime</string>
+    <string name="anime_db">Dragon Ball</string>
+    <string name="anime_dq">Dragon Quest: Fly</string>
 
 
 </resources>

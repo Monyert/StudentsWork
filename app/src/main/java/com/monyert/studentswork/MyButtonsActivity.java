@@ -66,9 +66,11 @@ public class MyButtonsActivity extends MainMenu {
 
         img1= findViewById(R.id.imageButtonON);
         img2= findViewById(R.id.imageButtonOFF);
+
         switch(v.getId()) {
             case R.id.imageButtonOFF:
                 if(true) {
+
                     img2.setVisibility(View.INVISIBLE);
                     img1.setVisibility(View.VISIBLE);
                 }

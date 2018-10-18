@@ -35,6 +35,9 @@
 
     <string name="title_activity_my_list">Les Meues Llistes</string>
     <string name="campo_texto"></string>
+    <string name="text_mis_listas">El meu Anime favorit</string>
+    <string name="anime_db">Bola de Drac</string>
+    <string name="anime_dq">Les Aventures de Fly</string>
 
 
 </resources>
