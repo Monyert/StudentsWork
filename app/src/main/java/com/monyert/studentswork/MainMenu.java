@@ -5,15 +5,17 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainMenu extends AppCompatActivity {
     static String submenu_url;
-    static String text_web;
+
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
+
     }
 
 
@@ -25,6 +27,7 @@ public class MainMenu extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         /*
+
         if (id == R.id.action_settings) {
 
             return true;
@@ -62,7 +65,7 @@ public class MainMenu extends AppCompatActivity {
         if (id == R.id.action_lists) {
             Intent intent = new Intent(this, MyListActivity.class);
             startActivity(intent);
-            Toast.makeText(this, "Selected " + item, Toast.LENGTH_SHORT).show();
+            
             return true;
         }
         return super.onOptionsItemSelected(item);

@@ -18,11 +18,12 @@ import android.widget.Toast;
 public class MyButtonsActivity extends MainMenu {
     private RadioButton gender;
     Boolean ON = true;
+    Boolean imgOnOff = Boolean.valueOf(true);
     Button button;
     ConstraintLayout constraintLayout;
     Toolbar toolbar;
     Boolean checked = true;
-
+    ImageButton img1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,6 +43,8 @@ public class MyButtonsActivity extends MainMenu {
                         .setAction("Action", null).show();
             }
         });
+
+        img1 = findViewById(R.id.imageButtonOFF);
     }
 
 
@@ -59,39 +62,21 @@ public class MyButtonsActivity extends MainMenu {
 
     }
 
-    ImageButton img1;
-    ImageButton img2;
+
     public void img_off(View v) {
 
+                if(imgOnOff.booleanValue()) {
 
-        img1= findViewById(R.id.imageButtonON);
-        img2= findViewById(R.id.imageButtonOFF);
-
-        switch(v.getId()) {
-            case R.id.imageButtonOFF:
-                if(true) {
-
-                    img2.setVisibility(View.INVISIBLE);
-                    img1.setVisibility(View.VISIBLE);
+                    img1.setImageResource(R.mipmap.onbutton);
+                    imgOnOff = Boolean.valueOf(false);
+                }else{
+                    img1.setImageResource(R.mipmap.offbutton);
+                    imgOnOff = Boolean.valueOf(true);
                 }
-        }
+
 
     }
 
-    public void img_on(View v) {
-
-
-        img1= findViewById(R.id.imageButtonON);
-        img2= findViewById(R.id.imageButtonOFF);
-        switch(v.getId()) {
-            case R.id.imageButtonON:
-                if(true) {
-                    img1.setVisibility(View.INVISIBLE);
-                    img2.setVisibility(View.VISIBLE);
-                }
-        }
-
-    }
 
     public void Dialog(String title, String message, String text) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);

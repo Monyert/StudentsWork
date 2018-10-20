@@ -34,10 +34,12 @@
     <string name="url_tera">https://en.tera.gameforge.com/news/index</string>
 
     <string name="title_activity_my_list">Mis Listas</string>
-    <string name="campo_texto"></string>
+
     <string name="text_mis_listas">Mi Anime favorito</string>
     <string name="anime_db">Bola de Dragon</string>
     <string name="anime_dq">Las Aventuras de Fly</string>
+    <string name="anime_bl">Laguna Negra</string>
+    <string name="list_select">Selected</string>
 
 
 </resources>

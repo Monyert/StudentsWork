@@ -31,12 +31,15 @@
     <string name="sub_web2">Aion</string>
     <string name="sub_web3">Tera</string>
     <string name="url_tera">https://en.tera.gameforge.com/news/index</string>
-    <string name="campo_texto"></string>
+
 
     <string name="title_activity_my_list">My List</string>
     <string name="text_mis_listas">My Favourite Anime</string>
     <string name="anime_db">Dragon Ball</string>
     <string name="anime_dq">Dragon Quest: Fly</string>
+    <string name="anime_bl">Black Lagon</string>
+    <string name="list_select">Selected</string>
+
 
 
 </resources>

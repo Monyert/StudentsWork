@@ -72,18 +72,7 @@
 
         </RadioGroup>
 
-        <ImageButton
-            android:id="@+id/imageButtonON"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="28dp"
-            android:layout_marginBottom="59dp"
-            android:onClick="img_on"
-            app:layout_constraintBottom_toTopOf="@+id/toggleButton"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@mipmap/onbutton" />
+
 
         <ImageButton
             android:id="@+id/imageButtonOFF"
