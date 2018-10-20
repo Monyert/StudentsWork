@@ -113,12 +113,12 @@ public class MyButtonsActivity extends MainMenu {
         if(checked){
             constraintLayout.setVisibility(View.VISIBLE);
             checked = false;
-            Toast.makeText(this, "Seleccionat Visible ", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.selected) + " Visible", Toast.LENGTH_SHORT).show();
         }
         else{
             constraintLayout.setVisibility(View.INVISIBLE);
             checked = true;
-            Toast.makeText(this, "Seleccionat Invisible ", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.selected) + " Invisible", Toast.LENGTH_SHORT).show();
         }
     }
 }

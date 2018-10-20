@@ -39,7 +39,7 @@
     <string name="anime_dq">Dragon Quest: Fly</string>
     <string name="anime_bl">Black Lagon</string>
     <string name="list_select">Selected</string>
-
+    <string name="selected">Selected</string>
 
 
 </resources>

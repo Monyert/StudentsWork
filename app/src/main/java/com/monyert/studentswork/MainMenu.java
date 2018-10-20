@@ -65,7 +65,7 @@ public class MainMenu extends AppCompatActivity {
         if (id == R.id.action_lists) {
             Intent intent = new Intent(this, MyListActivity.class);
             startActivity(intent);
-            
+
             return true;
         }
         return super.onOptionsItemSelected(item);
