@@ -15,7 +15,7 @@ import org.w3c.dom.Text;
 
 public class MyWebsActivity extends MainMenu {
     WebView webView;
-
+    TextView text;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +37,8 @@ public class MyWebsActivity extends MainMenu {
         webView.setWebViewClient(new WebViewClient());
         webView.getSettings().setJavaScriptEnabled(true);
         webView.loadUrl(MainMenu.submenu_url);
-
+        text = findViewById(R.id.textView2);
+        text.setText(MainMenu.nom);
 
     }
 

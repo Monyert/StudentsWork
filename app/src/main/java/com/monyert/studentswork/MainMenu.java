@@ -2,6 +2,7 @@ package com.monyert.studentswork;
 
 import android.content.Context;
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -10,12 +11,14 @@ import android.widget.Toast;
 
 public class MainMenu extends AppCompatActivity {
     static String submenu_url;
+    static String nom;
 
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
 
+
+        return true;
     }
 
 
@@ -43,23 +46,26 @@ public class MainMenu extends AppCompatActivity {
         }
         if (id == R.id.sub_web_item1) {
             Intent intent = new Intent(this, MyWebsActivity.class);
-            startActivity(intent);
-            submenu_url = getString(R.string.url_lineage);
 
+            submenu_url = getString(R.string.url_lineage);
+            nom = "Lineage 2";
+            startActivity(intent);
             return true;
         }
         if (id == R.id.sub_web_item2) {
             Intent intent = new Intent(this, MyWebsActivity.class);
-            startActivity(intent);
-            submenu_url = getString(R.string.url_aion);
 
+            submenu_url = getString(R.string.url_aion);
+            nom = "Aion";
+            startActivity(intent);
             return true;
         }
         if (id == R.id.sub_web_item3) {
             Intent intent = new Intent(this, MyWebsActivity.class);
-            startActivity(intent);
+            nom = "Tera";
             submenu_url = getString(R.string.url_tera);
 
+            startActivity(intent);
             return true;
         }
         if (id == R.id.action_lists) {
